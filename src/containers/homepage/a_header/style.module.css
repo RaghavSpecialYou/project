@@ -54,21 +54,8 @@
   color: #440e87;
 }
 
-/* popup container which is not permanent */
-.popup-container {
-  /* background: rgb(249, 249, 250); */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  width: 200px;
-  padding: 16px;
-  position: absolute;
-  right: 6rem;
-  top: 4rem;
-}
+/* Login popup (independent from header ,mutual friend of Loggedin popup) */
+
 .user-photo-container {
   background-color: grey;
   height: 64px;
@@ -94,3 +81,5 @@
   border-radius: 100rem;
   cursor: pointer;
 }
+
+/* LoggedinPopup (independent from header ,mutual friend of Login popup) */

@@ -1,0 +1,43 @@
+.card {
+  /* border: 2px solid red; */
+  height: 354px;
+  width: 412px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  position: absolute;
+  left: 35rem;
+  top: 15rem;
+}
+.loginform-header {
+  height: 64px;
+  background-color: #f9f5ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loginform-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  /* justify-content: center; */
+}
+.loginform-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.loginform-input {
+  height: 48px;
+  width: 364px;
+  border-radius: 100rem;
+  border: 1px solid rgba(27, 5, 4, 0.2);
+  font-size: 16px;
+}
+.loginform-submit {
+  height: 56px;
+  border: none;
+  background-color: #f99c98;
+  color: white;
+  cursor: pointer;
+}

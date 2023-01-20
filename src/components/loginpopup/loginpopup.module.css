@@ -1,0 +1,25 @@
+.user-photo-container {
+  background-color: grey;
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.user-photo {
+  height: 32px;
+  width: 32px;
+}
+.loginText {
+  text-align: center;
+}
+.loginButton {
+  height: 32px;
+  width: 160px;
+  border: none;
+  color: white;
+  background-color: #e95850;
+  border-radius: 100rem;
+  cursor: pointer;
+}

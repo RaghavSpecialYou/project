@@ -81,22 +81,4 @@ const Header = () => {
   );
 };
 
-export const LoginPopup = () => {
-  return (
-    <div className={styles["popup-container"]}>
-      <div className={styles["user-photo-container"]}>
-        <img
-          src="images/userImage.jpg"
-          alt="userIcon"
-          className={styles["user-photo"]}
-        />
-      </div>
-      <div className={styles.loginText}>
-        Login to see your order history details
-      </div>
-      <button className={styles.loginButton}>Login</button>
-    </div>
-  );
-};
-
 export default Header;
