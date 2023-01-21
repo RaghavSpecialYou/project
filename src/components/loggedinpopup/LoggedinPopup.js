@@ -1,7 +1,8 @@
 import Wrapper from "../wrapper/Wrapper";
 import styles from "./loggedinpopup.module.css";
 
-const LoggedinPopup = ({ setShowLoggedinPopup }) => {
+const LoggedinPopup = ({ setShowLoggedinPopup,shortName }) => {
+  console.log(shortName());
   return (
     <Wrapper>
       <div>Good Morning,Raghav Khandelwal</div>

@@ -13,7 +13,13 @@ const App = () => {
   const handleClick = () => {
     setShowLoginForm((show) => !show);
   };
+  const processData = (receiveData) =>{
+    console.log(receiveData);
+    return receiveData;
 
+  };
+  console.log(processData);
+ 
   return (
     <div className={styles.fragmentContainer}>
       <Header />
@@ -28,10 +34,11 @@ const App = () => {
           setShowLoginForm={setShowLoginForm}
           setShowLoginPopup={setShowLoginPopup}
           setShowLoggedinPopup={setShowLoggedinPopup}
+          processData = {processData}
         />
       )}
       {showLoggedinPopup && (
-        <LoggedinPopup setShowLoggedinPopup={setShowLoggedinPopup} />
+        <LoggedinPopup setShowLoggedinPopup={setShowLoggedinPopup} shortName={processData}/>
       )}
     </div>
   );

@@ -1,5 +1,6 @@
 import Wrapper from "../wrapper/Wrapper";
 import styles from "./loginpopup.module.css";
+import Button from "../Button/Button";
 
 const LoginPopup = ({ onClickLogin }) => {
   return (
@@ -15,9 +16,12 @@ const LoginPopup = ({ onClickLogin }) => {
       <div className={styles.loginText}>
         Login to see your order history details
       </div>
-      <button className={styles.loginButton} onClick={onClickLogin}>
+      {/* <button className={styles.loginButton} onClick={onClickLogin}>
         Login
-      </button>
+      </button> */}
+      <Button isActive={false} onClick={onClickLogin}>
+        Login
+      </Button>
     </Wrapper>
     // </div>
   );

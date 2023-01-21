@@ -1,16 +1,21 @@
 import React, { useState } from "react";
 import styles from "./loginform.module.css";
+import Button from "../Button/Button";
 
 const LoginForm = ({
   setShowLoginForm,
   setShowLoginPopup,
   setShowLoggedinPopup,
+  processData
 }) => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
     const loginData = [e.target[0].value, e.target[1].value];
+
+    console.log(e.target[0]);
+
     console.log(loginData);
     const data = loginData[1]
       .split(" ")
@@ -24,6 +29,7 @@ const LoginForm = ({
     setShowLoginForm(false);
     setShowLoginPopup(false);
     setShowLoggedinPopup(true);
+    processData(data);
     // const createUserName = () => {
     //   loginData[1].split(' ').map((name) => name[0]);
     // };
@@ -57,11 +63,16 @@ const LoginForm = ({
             }}
           />
         </div>
-        <button
+        {/* onClic={()=>{console.log('Ra')}}
+        text="click" */}
+        <Button isActive={true} >
+          Submit
+          </Button>
+        {/* <button
           className={`${styles["loginform-input"]} ${styles["loginform-submit"]}`}
         >
           Submit
-        </button>
+        </button> */}
       </form>
     </div>
   );
