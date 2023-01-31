@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import PopupWrapper from "../../../components/wrapper/PopupWrapper";
 import styles from "./loggedinpopup.module.css";
 
 const LoggedinPopup = ({ setShowLoggedinPopup, setShowLoginPopup }) => {
-  const [showMyOrders, setShowMyOrders] = useState(false);
-  const [showOrderHistory, setShowOrderHistory] = useState(false);
+  // const [showMyOrders, setShowMyOrders] = useState(false);
+  // const [showOrderHistory, setShowOrderHistory] = useState(false);
   return (
     <>
       <PopupWrapper>
@@ -13,8 +13,8 @@ const LoggedinPopup = ({ setShowLoggedinPopup, setShowLoginPopup }) => {
         <div
           className={styles.myOrders}
           onClick={() => {
-            setShowMyOrders(true);
-            setShowLoggedinPopup(false);
+            // setShowMyOrders(true);
+            // setShowLoggedinPopup(false);
           }}
         >
           My Orders
@@ -22,8 +22,8 @@ const LoggedinPopup = ({ setShowLoggedinPopup, setShowLoginPopup }) => {
         <div
           className={styles.orderHistory}
           onClick={() => {
-            setShowOrderHistory(true);
-            setShowLoggedinPopup(false);
+            // setShowOrderHistory(true);
+            // setShowLoggedinPopup(false);
           }}
         >
           Order History
@@ -38,18 +38,18 @@ const LoggedinPopup = ({ setShowLoggedinPopup, setShowLoginPopup }) => {
           Log Out
         </div>
       </PopupWrapper>
-      {showMyOrders && <MyOrders />}
-      {showOrderHistory && <OrderHistory />}
+      {/* {showMyOrders && <MyOrders />} */}
+      {/* {showOrderHistory && <OrderHistory />} */}
     </>
   );
 };
 
 export default LoggedinPopup;
 
-const MyOrders = () => {
-  return <div>My Orders ,this is second commit</div>;
-};
+// const MyOrders = () => {
+//   return <div>My Orders </div>;
+// };
 
-const OrderHistory = () => {
-  return <div>Order history</div>;
-};
+// const OrderHistory = () => {
+//   return <div>Order history</div>;
+// };

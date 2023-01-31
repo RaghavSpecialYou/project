@@ -5,11 +5,19 @@ import Header from "./header/Header.js";
 import LoginPopup from "./loginpopup/LoginPopup";
 import LoggedinPopup from "./loggedinpopup/LoggedinPopup";
 import LoginForm from "./loginform/LoginForm";
+import MyOrders from "./myOrders/MyOrders";
+import OrderHistory from "./orderHistory/OrderHistory";
+import MyCart from "./myCart/MyCart";
+import WishList from "./wishList/WishList";
 
 const HomePage = () => {
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showLoginPopup, setShowLoginPopup] = useState(true);
   const [showLoggedinPopup, setShowLoggedinPopup] = useState(false);
+  const [showMyOrders, setShowMyOrders] = useState(false);
+  const [showOrderHistory, setShowOrderHistory] = useState(false);
+  const [showMyCart, setShowMyCart] = useState(false);
+  const [showWishList, setShowWishList] = useState(false);
 
   const handleClick = () => {
     // setShowLoginForm((show) => !show);
@@ -24,7 +32,7 @@ const HomePage = () => {
 
   return (
     <div className={styles.fragmentContainer}>
-      <Header />
+      <Header setShowMyCart={setShowMyCart} setShowWishlist={setShowWishList} />
 
       {showLoginPopup && <LoginPopup onClickLogin={handleClick} />}
       {showLoginForm && (
@@ -41,6 +49,10 @@ const HomePage = () => {
           setShowLoginPopup={setShowLoginPopup}
         />
       )}
+      {showMyOrders && <MyOrders />}
+      {showOrderHistory && <OrderHistory />}
+      {showMyCart && <MyCart />}
+      {showWishList && <WishList />}
     </div>
   );
 };

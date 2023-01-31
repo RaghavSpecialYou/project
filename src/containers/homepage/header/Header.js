@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./style.module.css";
 
-const Header = () => {
+const Header = ({ setShowMyCart, setShowWishList }) => {
   return (
     <header className={styles.header}>
       {/* header navbar section(first section-first part)   */}
