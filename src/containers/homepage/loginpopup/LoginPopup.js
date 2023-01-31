@@ -1,11 +1,10 @@
-import Wrapper from "../wrapper/Wrapper";
+import PopupWrapper from "../../../components/wrapper/PopupWrapper";
 import styles from "./loginpopup.module.css";
-import Button from "../Button/Button";
+import Button from "../../../components/Button/Button";
 
 const LoginPopup = ({ onClickLogin }) => {
   return (
-    // <div className={styles["popup-container"]}>
-    <Wrapper>
+    <PopupWrapper>
       <div className={styles["user-photo-container"]}>
         <img
           src="images/userImage.jpg"
@@ -16,14 +15,11 @@ const LoginPopup = ({ onClickLogin }) => {
       <div className={styles.loginText}>
         Login to see your order history details
       </div>
-      {/* <button className={styles.loginButton} onClick={onClickLogin}>
-        Login
-      </button> */}
+
       <Button isActive={false} onClick={onClickLogin}>
         Login
       </Button>
-    </Wrapper>
-    // </div>
+    </PopupWrapper>
   );
 };
 

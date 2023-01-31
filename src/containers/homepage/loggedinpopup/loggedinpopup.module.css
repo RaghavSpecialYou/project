@@ -1,0 +1,10 @@
+.logout {
+  cursor: pointer;
+  color: #eb5757;
+}
+.myOrders {
+  cursor: pointer;
+}
+.orderHistory {
+  cursor: pointer;
+}
