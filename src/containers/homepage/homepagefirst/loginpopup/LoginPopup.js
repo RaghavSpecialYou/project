@@ -1,6 +1,6 @@
-import PopupWrapper from "../../../components/wrapper/PopupWrapper";
+import PopupWrapper from "../../../../components/wrapper/PopupWrapper";
 import styles from "./loginpopup.module.css";
-import Button from "../../../components/Button/Button";
+import Button from "../../../../components/button/Button";
 
 const LoginPopup = ({ onClickLogin }) => {
   return (

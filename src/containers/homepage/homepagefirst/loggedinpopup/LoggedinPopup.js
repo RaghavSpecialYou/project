@@ -1,9 +1,14 @@
 import React from "react";
 // import { useState } from "react";
-import PopupWrapper from "../../../components/wrapper/PopupWrapper";
+import PopupWrapper from "../../../../components/wrapper/PopupWrapper";
 import styles from "./loggedinpopup.module.css";
 
-const LoggedinPopup = ({ setShowLoggedinPopup, setShowLoginPopup }) => {
+const LoggedinPopup = ({
+  setShowLoggedinPopup,
+  setShowLoginPopup,
+  setShowOrderHistory,
+  setShowMyOrders,
+}) => {
   // const [showMyOrders, setShowMyOrders] = useState(false);
   // const [showOrderHistory, setShowOrderHistory] = useState(false);
   return (
@@ -13,8 +18,8 @@ const LoggedinPopup = ({ setShowLoggedinPopup, setShowLoginPopup }) => {
         <div
           className={styles.myOrders}
           onClick={() => {
-            // setShowMyOrders(true);
-            // setShowLoggedinPopup(false);
+            setShowMyOrders(true);
+            setShowLoggedinPopup(false);
           }}
         >
           My Orders
@@ -22,8 +27,8 @@ const LoggedinPopup = ({ setShowLoggedinPopup, setShowLoginPopup }) => {
         <div
           className={styles.orderHistory}
           onClick={() => {
-            // setShowOrderHistory(true);
-            // setShowLoggedinPopup(false);
+            setShowOrderHistory(true);
+            setShowLoggedinPopup(false);
           }}
         >
           Order History

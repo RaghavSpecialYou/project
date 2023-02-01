@@ -1,0 +1,182 @@
+.myWishList-header {
+  height: 96px;
+  width: 471px;
+  background-color: #f9f5ff;
+  font-weight: 600;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+.myWishList-items {
+  height: 179px;
+  width: 471px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 32px;
+}
+.myWishList-couponCode {
+  height: 142px;
+  width: 471px;
+  padding: 16px;
+}
+.myWishList-productAddons {
+  height: 340px;
+  width: 471px;
+  /* border: 2px solid blue; */
+  padding: 16px;
+}
+.myWishList-blankSpace {
+  height: 131px;
+  width: 471px;
+  background-color: white;
+}
+.myWishList-couponApplied {
+  height: 49px;
+  width: 471px;
+  background-color: #219653;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proceedCheckout {
+  height: 88px;
+  width: 471px;
+  background-color: #f9f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* first section(my-cart-header) */
+.myWishList-header-text {
+  line-height: 120%;
+}
+.myWishList-header-close-button-container {
+  height: 32px;
+  width: 32px;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.myWishList-header-close-button {
+  height: 22px;
+  width: 22px;
+  transform: rotate(-45deg);
+  color: rgba(0, 0, 0, 0.5);
+  /* line-height: 120%; */
+  /* text-align: center; */
+}
+
+/* second section(my-cart-items) */
+.myWishList-items-photo {
+  background-image: url("images/circleImage7.jpg");
+  background-size: cover;
+  height: 115px;
+  width: 115px;
+  border-radius: 8px;
+}
+.myWishList-items-description {
+  height: 113px;
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 14px;
+  margin-left: 12px;
+}
+.myWishList-items-description-textRate-container {
+  height: 69px;
+  width: 255px;
+}
+
+.myWishList-items-description-text {
+  width: 255px;
+  height: 42px;
+
+  font-weight: 500;
+  line-height: 148%;
+  letter-spacing: 0.01em;
+  color: rgba(27, 5, 4, 0.75);
+}
+.myWishList-items-description-rate {
+  width: 172px;
+  height: 23px;
+  font-weight: 600;
+  line-height: 162%;
+  letter-spacing: 0.02em;
+  color: #1b0504;
+}
+.myWishList-items-description-incrementDecrement {
+  width: 88px;
+  height: 24px;
+  display: flex;
+  gap: 8px;
+}
+.myWishList-items-description-decrement-container {
+  width: 24px;
+  height: 24px;
+  background: #e95850;
+  border-radius: 4px;
+  padding: 5px;
+  padding-left: 8px;
+  color: #f2f2f2;
+}
+.myWishList-items-description-quantity-container {
+  width: 24px;
+  height: 24px;
+  background: #fff5f5;
+  border-radius: 4px;
+  padding: 5px;
+  padding-left: 8px;
+}
+.myWishList-items-description-increment-container {
+  width: 24px;
+  height: 24px;
+  background: #e95850;
+  border-radius: 4px;
+  padding: 5px;
+  padding-left: 8px;
+  color: #f2f2f2;
+}
+.myWishList-items-close-button-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-100%, 50%);
+  height: 24px;
+  width: 24px;
+  padding: 1px;
+  padding-left: 6px;
+}
+.myWishList-items-close-button {
+  transform: rotate(-45deg);
+  color: rgba(33, 33, 33, 0.64);
+  height: 17.5px;
+  width: 17.5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* sixth section(coupon applied) */
+.myWishList-couponApplied-svg {
+  height: 21px;
+  width: 21px;
+}
+.myWishList-couponApplied-checkBadge {
+  stroke: #219653;
+  fill: white;
+}
+.myWishList-couponApplied-text {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+}

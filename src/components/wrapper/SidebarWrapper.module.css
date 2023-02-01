@@ -1,7 +1,7 @@
 .sidebarContainer {
   height: 1025px;
   width: 471px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: absolute;
   right: 0rem;
   top: 0rem;

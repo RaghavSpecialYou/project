@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./loginform.module.css";
-import Button from "../../../components/Button/Button";
+import Button from "../../../../components/button/Button";
 
 const LoginForm = ({
   setShowLoginForm,

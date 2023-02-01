@@ -1,16 +1,24 @@
 import React from "react";
 // import styles from "./myCart.module.css";
-import "./myCart.css";
-import SidebarWrapper from "../../../components/wrapper/SidebarWrapper";
+import "./mycart.css";
+import SidebarWrapper from "../../../../components/wrapper/SidebarWrapper";
 
-const MyCart = () => {
+const MyCart = ({ setShowMyCart }) => {
   return (
     <SidebarWrapper>
       {/* first section(header part)  */}
       <div className="myCart-header">
         <div className="myCart-header-text">My Cart (1)</div>
         <div className="myCart-header-close-button-container">
-          <div className="myCart-header-close-button">+</div>
+          <div
+            className="myCart-header-close-button"
+            onClick={() => {
+              setShowMyCart(false);
+            }}
+            style={{ cursor: "pointer" }}
+          >
+            +
+          </div>
         </div>
       </div>
 

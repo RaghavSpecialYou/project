@@ -74,8 +74,8 @@
 }
 
 /* second section(my-cart-items) */
-/* .myCart-items-photo {
-  background: url("images/circleImage7.jpg");
+.myCart-items-photo {
+  background-image: url("images/circleImage7.jpg");
   background-size: cover;
   height: 115px;
   width: 115px;
@@ -163,10 +163,10 @@
   width: 17.5px;
   font-size: 18px;
   font-weight: 600;
-} */
+}
 
 /* third section(myCart-couponCode) */
-/* .myCart-couponCode-upper {
+.myCart-couponCode-upper {
   font-weight: 600;
   font-size: 14px;
   line-height: 162%;
@@ -200,10 +200,10 @@
   letter-spacing: 0.02em;
   color: #219653;
   margin-top: 8px;
-} */
+}
 
 /* fourth section(product-addons) */
-/* .myCart-productAddons h1 {
+.myCart-productAddons h1 {
   font-weight: 600;
   font-size: 14px;
   line-height: 162%;
@@ -257,12 +257,12 @@
   padding-top: 1px;
   padding: 1px;
   padding-left: 1px;
-} */
+}
 
 /* fifth section(blank space) */
 
 /* sixth section(coupon applied) */
-/* .myCart-couponApplied-svg {
+.myCart-couponApplied-svg {
   height: 21px;
   width: 21px;
 }
@@ -275,10 +275,10 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 120%;
-} */
+}
 
 /* seventh section(proceed to checkout) */
-/* .proceedCheckout-left {
+.proceedCheckout-left {
 }
 .proceedCheckout-right {
   border: none;
@@ -301,4 +301,4 @@
   text-decoration-line: line-through;
   color: #1b0504;
   opacity: 0.5;
-} */
+}
