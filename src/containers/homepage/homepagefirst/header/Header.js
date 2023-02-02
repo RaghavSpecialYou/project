@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./header.module.css";
+// import ListWrapper from "../../../../components/wrapper/ListWrapper";
 
 const Header = ({
   setShowMyCart,
@@ -8,10 +9,10 @@ const Header = ({
   setShowLoggedinPopup,
   setShowLoginForm,
 }) => {
-  const [showCategories, setShowCategories] = useState(false);
+  const [showCategory, setShowCategory] = useState(false);
   const [showAge, setShowAge] = useState(false);
   return (
-    <>
+    <div className={styles.fragmentContainer}>
       <header className={styles.header}>
         {/* header navbar section(first section-first part)   */}
         <div className={styles.navbar}>
@@ -84,7 +85,7 @@ const Header = ({
               stroke="currentColor"
               className={`${styles.userIcon} ${styles["navbar-icons"]}`}
               onClick={() => {
-                setShowLoginPopup(true);
+                setShowLoginPopup((show) => !show);
               }}
             >
               <path
@@ -100,7 +101,7 @@ const Header = ({
         <div className={styles.themes}>
           <span
             onMouseOver={() => {
-              setShowCategories(true);
+              setShowCategory(true);
             }}
           >
             Birthday Themes
@@ -110,34 +111,29 @@ const Header = ({
           <span>Personalised Balloons</span>
         </div>
       </header>
-      {showCategories && <Categories setShowCategories={setShowCategories} />}
-      {showAge && <Age setShowAge={setShowAge} />}
-    </>
+      {showCategory && <Category setShowAge={setShowAge} showAge={showAge} />}
+      {/* <ListWrapper>raghav khandelwal</ListWrapper> */}
+    </div>
   );
 };
 
 export default Header;
 
-const Categories = ({ setShowCategories }) => {
+const Category = ({ setShowAge, showAge }) => {
   return (
-    <div
-      onMouseOver={() => {
-        setShowCategories(true);
-      }}
-    >
-      Categories
-    </div>
+    <>
+      <div
+        onMouseOver={() => {
+          setShowAge(true);
+        }}
+      >
+        Category
+      </div>
+      {showAge && <Age />}
+    </>
   );
 };
 
 const Age = ({ setShowAge }) => {
-  return (
-    <div
-      onMouseOver={() => {
-        setShowAge(true);
-      }}
-    >
-      Age
-    </div>
-  );
+  return <div>Age</div>;
 };

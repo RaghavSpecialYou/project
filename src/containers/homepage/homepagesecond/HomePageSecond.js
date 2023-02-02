@@ -1,7 +1,12 @@
 import React from "react";
+import Banner from "./banner/Banner";
 
 const HomePageSecond = () => {
-  return <div>HomePageSecond</div>;
+  return (
+    <>
+      <Banner />
+    </>
+  );
 };
 
 export default HomePageSecond;

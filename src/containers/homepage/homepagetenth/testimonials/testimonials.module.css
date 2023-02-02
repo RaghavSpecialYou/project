@@ -1,0 +1,80 @@
+/* tenth section(testimonials) */
+.testimonials {
+  width: 1280px;
+  height: 526px;
+  /* border: 2px solid red; */
+  padding-top: 8px;
+}
+.testimonials h1 {
+  text-align: center;
+}
+.happyCustomers-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 2.5% 5%;
+}
+.testimonialDescription {
+  background-color: #e2c9ff;
+  width: 331px;
+  height: 292px;
+  border-radius: 16px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 32px;
+  padding-bottom: 80px;
+}
+.testimonialText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 162%;
+  /* or 29px */
+  /* Secondary/900 */
+  color: #440e87;
+}
+.testimonialFace {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+.testimonialFace1 {
+  background: url("images/happyCustomer.avif");
+  background-size: cover;
+}
+.testimonialFace2 {
+  background: url("images/happyCustomer2.avif");
+  background-size: cover;
+}
+.testimonialFace3 {
+  background: url("images/happyCustomer3.avif");
+  background-size: cover;
+}
+
+.testimonialQuote {
+  width: 40px;
+  height: 36px;
+}
+.svgQuote {
+  fill: rgba(27, 5, 4, 0.2);
+}
+.testimonialUser {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  /* identical to box height, or 22px */
+
+  color: #000000;
+}

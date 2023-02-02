@@ -1,0 +1,109 @@
+/* fifth section(Best sellers) */
+
+.bestSellers-container {
+  background-color: #fff5f5;
+  height: 530px;
+  padding-left: 128px;
+  padding-right: 128px;
+}
+.bestSellers-container h1 {
+  text-align: center;
+  padding-top: 16px;
+  margin-bottom: 32px;
+}
+.bestSellers-image-text-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+.bestSellers-slide-left {
+  height: 48px;
+  width: 48px;
+  border-radius: 36px;
+  background-color: #fdc8c5;
+  flex-shrink: 0;
+}
+
+.bestSellers-slide-right {
+  height: 48px;
+  width: 48px;
+  border-radius: 36px;
+  background-color: #fdc8c5;
+  flex-shrink: 0;
+}
+.slide-left-icon {
+  stroke: #e95850;
+}
+.slide-right-icon {
+  stroke: #e95850;
+}
+.bestSellers-image {
+  height: 299px;
+  width: 243px;
+  /* background-size: cover; */
+  border-radius: 16px;
+  position: relative;
+}
+.bestSellers-image1 {
+  background: url(images/circleImage1.jpg);
+  background-size: cover;
+}
+.bestSellers-image2 {
+  background: url(images/circleImage2.jpg);
+  background-size: cover;
+}
+.bestSellers-image3 {
+  background: url(images/circleImage3.jpg);
+  background-size: cover;
+}
+.bestSellers-image4 {
+  background: url(images/circleImage4.jpg);
+  background-size: cover;
+}
+.svgContainer {
+  height: 32px;
+  width: 32px;
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(66.6667px);
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.svgContainer-heart {
+  stroke: #ffffff;
+  height: 16px;
+  width: 16px;
+}
+.bestSellers-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 162%;
+}
+.bestSellers-productName {
+  font-size: 16px;
+  font-weight: 500;
+  /* identical to box height, or 26px */
+  color: rgba(27, 5, 4, 0.75);
+}
+.bestSellers-productRate {
+  font-weight: 600;
+  font-size: 20px;
+  /* text/dark */
+  color: #1b0504;
+}
+.bestSellers-productMrp {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(27, 5, 4, 0.5);
+}
+.bestSellers-productDiscount {
+  color: #219653;
+  font-weight: 600;
+  font-size: 18px;
+}

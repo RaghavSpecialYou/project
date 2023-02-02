@@ -7,6 +7,7 @@ const LoginForm = ({
   setShowLoginPopup,
   setShowLoggedinPopup,
   onProcessData,
+  setData,
 }) => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
@@ -14,7 +15,7 @@ const LoginForm = ({
     e.preventDefault();
     const loginData = [e.target[0].value, e.target[1].value];
     console.log(loginData);
-    const data = loginData[1]
+    const localData = loginData[1]
       .split(" ")
       .map((name) => name[0])
       .join("")
@@ -25,7 +26,8 @@ const LoginForm = ({
     setShowLoginForm(false);
     setShowLoginPopup(false);
     setShowLoggedinPopup(true);
-    onProcessData(data);
+    onProcessData(localData);
+    setData(localData);
   };
   return (
     <div className={styles.card}>

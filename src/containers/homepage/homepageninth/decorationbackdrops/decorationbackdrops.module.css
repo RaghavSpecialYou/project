@@ -1,0 +1,14 @@
+/* nineth section(Decoration Backdrops same as best sellers) */
+.decorationBackdrops {
+    height: 625px;
+    width: 1280px;
+    background-color: #fef8f4;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .decorationBackdrops h1 {
+    color: #e95850;
+  }

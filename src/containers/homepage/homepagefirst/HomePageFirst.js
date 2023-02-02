@@ -10,7 +10,9 @@ import OrderHistory from "./orderhistory/OrderHistory";
 import MyCart from "./mycart/MyCart";
 import WishList from "./wishlist/WishList";
 
-const HomePage = () => {
+const HomePageFirst = () => {
+  const [data, setData] = useState("");
+  const [way, setWay] = useState("");
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showLoginPopup, setShowLoginPopup] = useState(true);
   const [showLoggedinPopup, setShowLoggedinPopup] = useState(false);
@@ -26,6 +28,7 @@ const HomePage = () => {
   };
   const processData = (receiveData) => {
     console.log(receiveData);
+    setWay(receiveData);
     // const arrayData = [receiveData, ...array];
     // console.log(arrayData);
   };
@@ -47,6 +50,7 @@ const HomePage = () => {
           setShowLoginPopup={setShowLoginPopup}
           setShowLoggedinPopup={setShowLoggedinPopup}
           onProcessData={processData}
+          setData={setData}
         />
       )}
       {showLoggedinPopup && (
@@ -55,6 +59,8 @@ const HomePage = () => {
           setShowLoginPopup={setShowLoginPopup}
           setShowOrderHistory={setShowOrderHistory}
           setShowMyOrders={setShowMyOrders}
+          data={data}
+          way={way}
         />
       )}
       {showMyOrders && <MyOrders setShowMyOrders={setShowMyOrders} />}
@@ -67,4 +73,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HomePageFirst;

@@ -8,13 +8,15 @@ const LoggedinPopup = ({
   setShowLoginPopup,
   setShowOrderHistory,
   setShowMyOrders,
+  data,
+  way,
 }) => {
   // const [showMyOrders, setShowMyOrders] = useState(false);
   // const [showOrderHistory, setShowOrderHistory] = useState(false);
   return (
     <>
       <PopupWrapper>
-        <div>Good Morning,Raghav Khandelwal</div>
+        <div>Good Morning,{way}</div>
         <div
           className={styles.myOrders}
           onClick={() => {
