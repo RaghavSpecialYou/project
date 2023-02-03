@@ -1,22 +1,23 @@
 import React from "react";
+import styles from "./bestsellers.module.css";
 
 const BestSellers = () => {
   return (
     //  fifth section(best sellers)
-    <div class="bestSellers-container">
+    <div className={styles["bestSellers-container"]}>
       {/* fifth section--first part(heading)  */}
       <h1>Best Sellers</h1>
       {/* fifth section--second part(images,text and slider button)  */}
-      <div class="bestSellers-image-text-container">
+      <div className={styles["bestSellers-image-text-container"]}>
         {/* fifth section--second part--first part(slider button and its container)  */}
-        <div class="bestSellers-slide-left">
+        <div className={styles["bestSellers-slide-left"]}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="slide-left-icon"
+            className={styles["slide-left-icon"]}
           >
             <path
               stroke-linecap="round"
@@ -26,17 +27,19 @@ const BestSellers = () => {
           </svg>
         </div>
         {/* fifth section--second part--second part(image and text) */}
-        <div class="bestSellers-image-text-container1">
+        <div className={styles["bestSellers-image-text-container1"]}>
           {/* fifth section--second part--second part--first part(image and inside wishlist icon)  */}
-          <div class="bestSellers-image1 bestSellers-image">
-            <div class="svgContainer">
+          <div
+            className={`${styles["bestSellers-image1"]} ${styles["bestSellers-image"]}`}
+          >
+            <div className={styles.svgContainer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="svgContainer-heart"
+                className={styles["svgContainer-heart"]}
               >
                 <path
                   stroke-linecap="round"
@@ -47,29 +50,35 @@ const BestSellers = () => {
             </div>
           </div>
           {/* fifth section--second part--second part--second part(text and inside text)  */}
-          <div class="bestSellers-text1 bestSellers-text">
-            <div class="bestSellers-productName">
+          <div
+            className={`${styles["bestSellers-text1"]} ${styles["bestSellers-text"]}`}
+          >
+            <div className={styles["bestSellers-productName"]}>
               happy birthday decorations
             </div>
             <div>
-              <span class="bestSellers-productRate">₹399</span>
-              <span class="bestSellers-productMrp">₹500</span>
-              <span class="bestSellers-productDiscount">10% off</span>
+              <span className={styles["bestSellers-productRate"]}>₹399</span>
+              <span className={styles["bestSellers-productMrp"]}>₹500</span>
+              <span className={styles["bestSellers-productDiscount"]}>
+                10% off
+              </span>
             </div>
           </div>
         </div>
         {/* fifth section-second part-third part(image and text)  */}
-        <div class="bestSellers-image-text-container2">
+        <div className={styles["bestSellers-image-text-container2"]}>
           {/* fifth section--second part--third part--first part(image and inside wishlist icon)  */}
-          <div class="bestSellers-image2 bestSellers-image">
-            <div class="svgContainer">
+          <div
+            className={`${styles["bestSellers-image2"]} ${styles["bestSellers-image"]}`}
+          >
+            <div className={styles.svgContainer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="svgContainer-heart"
+                className={styles["svgContainer-heart"]}
               >
                 <path
                   stroke-linecap="round"
@@ -80,27 +89,33 @@ const BestSellers = () => {
             </div>
           </div>
           {/* fifth section--second part--third part--second part(text and inside text) */}
-          <div class="bestSellers-text2 bestSellers-text">
-            <div class="bestSellers-productName">
+          <div
+            className={`${styles["bestSellers-text2"]} ${styles["bestSellers-text"]}`}
+          >
+            <div className={styles["bestSellers-productName"]}>
               happy birthday decorations
             </div>
             <div>
-              <span class="bestSellers-productRate">₹399</span>
-              <span class="bestSellers-productMrp">₹500</span>
-              <span class="bestSellers-productDiscount">10% off</span>
+              <span className={styles["bestSellers-productRate"]}>₹399</span>
+              <span className={styles["bestSellers-productMrp"]}>₹500</span>
+              <span className={styles["bestSellers-productDiscount"]}>
+                10% off
+              </span>
             </div>
           </div>
         </div>
-        <div class="bestSellers-image-text-container3">
-          <div class="bestSellers-image3 bestSellers-image">
-            <div class="svgContainer">
+        <div className={styles["bestSellers-image-text-container3"]}>
+          <div
+            className={`${styles["bestSellers-image3"]} ${styles["bestSellers-image"]}`}
+          >
+            <div className={styles.svgContainer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="svgContainer-heart"
+                className={styles["svgContainer-heart"]}
               >
                 <path
                   stroke-linecap="round"
@@ -110,27 +125,33 @@ const BestSellers = () => {
               </svg>
             </div>
           </div>
-          <div class="bestSellers-text3 bestSellers-text">
-            <div class="bestSellers-productName">
+          <div
+            className={`${styles["bestSellers-text3"]} ${styles["bestSellers-text"]}`}
+          >
+            <div className={styles["bestSellers-productName"]}>
               happy birthday decorations
             </div>
             <div>
-              <span class="bestSellers-productRate">₹399</span>
-              <span class="bestSellers-productMrp">₹500</span>
-              <span class="bestSellers-productDiscount">10% off</span>
+              <span className={styles["bestSellers-productRate"]}>₹399</span>
+              <span className={styles["bestSellers-productMrp"]}>₹500</span>
+              <span className={styles["bestSellers-productDiscount"]}>
+                10% off
+              </span>
             </div>
           </div>
         </div>
-        <div class="bestSellers-image-text-container4">
-          <div class="bestSellers-image4 bestSellers-image">
-            <div class="svgContainer">
+        <div className="bestSellers-image-text-container4">
+          <div
+            className={`${styles["bestSellers-image4"]} ${styles["bestSellers-image"]}`}
+          >
+            <div className={styles.svgContainer}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="svgContainer-heart"
+                className={styles["svgContainer-heart"]}
               >
                 <path
                   stroke-linecap="round"
@@ -140,25 +161,29 @@ const BestSellers = () => {
               </svg>
             </div>
           </div>
-          <div class="bestSellers-text4 bestSellers-text">
-            <div class="bestSellers-productName">
+          <div
+            className={`${styles["bestSellers-text4"]} ${styles["bestSellers-text"]}`}
+          >
+            <div className={styles["bestSellers-productName"]}>
               happy birthday decorations
             </div>
             <div>
-              <span class="bestSellers-productRate">₹399</span>
-              <span class="bestSellers-productMrp">₹500</span>
-              <span class="bestSellers-productDiscount">10% off</span>
+              <span className={styles["bestSellers-productRate"]}>₹399</span>
+              <span className={styles["bestSellers-productMrp"]}>₹500</span>
+              <span className={styles["bestSellers-productDiscount"]}>
+                10% off
+              </span>
             </div>
           </div>
         </div>
-        <div class="bestSellers-slide-right">
+        <div className={styles["bestSellers-slide-right"]}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="slide-right-icon"
+            className={["slide-right-icon"]}
           >
             <path
               stroke-linecap="round"
@@ -170,12 +195,12 @@ const BestSellers = () => {
       </div>
 
       {/* fifth section--third part(below shapes)  */}
-      <div class="shapes">
-        <span class="shape1 shapeRec"></span>
-        <span class="shape2 shapeCir"></span>
-        <span class="shape3 shapeCir"></span>
-        <span class="shape4 shapeCir"></span>
-        <span class="shape5 shapeCir"></span>
+      <div className={styles.shapes}>
+        <span className={`${styles.shape1} ${styles.shapeRec}`}></span>
+        <span className={`${styles.shape2} ${styles.shapeCir}`}></span>
+        <span className={`${styles.shape3} ${styles.shapeCir}`}></span>
+        <span className={`${styles.shape4} ${styles.shapeCir}`}></span>
+        <span className={`${styles.shape5} ${styles.shapeCir}`}></span>
       </div>
     </div>
   );

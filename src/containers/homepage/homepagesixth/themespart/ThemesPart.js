@@ -1,19 +1,20 @@
 import React from "react";
+import styles from "./themespart.module.css";
 
 const ThemesPart = () => {
   return (
     //  sixth section(themes part)
-    <div class="themes-container">
+    <div className={styles["themes-container"]}>
       <h1>Decorations For Kids</h1>
-      <div class="themes-images">
-        <div class="bestSellers-slide-left">
+      <div className={styles["themes-images"]}>
+        <div className={styles["bestSellers-slide-left"]}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="slide-left-icon"
+            className={styles["slide-left-icon"]}
           >
             <path
               stroke-linecap="round"
@@ -23,38 +24,62 @@ const ThemesPart = () => {
           </svg>
         </div>
 
-        <div class="themes-image1-container themes-image-container">
-          <div class="themes-image1 themes-image"></div>
+        <div
+          className={`${styles["themes-image1-container"]} ${styles["themes-image-container"]}`}
+        >
+          <div
+            className={`${styles["themes-image1"]} ${styles["themes-image"]}`}
+          ></div>
         </div>
 
-        <div class="themes-image2-container themes-image-container">
-          <div class="themes-image2 themes-image"></div>
+        <div
+          className={`${styles["themes-image2-container"]} ${styles["themes-image-container"]}`}
+        >
+          <div
+            className={`${styles["themes-image2"]} ${styles["themes-image"]}`}
+          ></div>
         </div>
 
-        <div class="themes-image3-container themes-image-container">
-          <div class="themes-image3 themes-image"></div>
+        <div
+          className={`${styles["themes-image3-container"]} ${styles["themes-image-container"]}`}
+        >
+          <div
+            className={`${styles["themes-image3"]} ${styles["themes-image"]}`}
+          ></div>
         </div>
 
-        <div class="themes-image4-container themes-image-container">
-          <div class="themes-image4 themes-image"></div>
+        <div
+          className={`${styles["themes-image4-container"]} ${styles["themes-image-container"]}`}
+        >
+          <div
+            className={`${styles["themes-image4"]} ${styles["themes-image"]}`}
+          ></div>
         </div>
 
-        <div class="themes-image5-container themes-image-container">
-          <div class="themes-image5 themes-image"></div>
+        <div
+          className={`${styles["themes-image5-container"]} ${styles["themes-image-container"]}`}
+        >
+          <div
+            className={`${styles["themes-image5"]} ${styles["themes-image"]}`}
+          ></div>
         </div>
 
-        <div class="themes-image6-container themes-image-container">
-          <div class="themes-image6 themes-image"></div>
+        <div
+          className={`${styles["themes-image6-container"]} ${styles["themes-image-container"]}`}
+        >
+          <div
+            className={`${styles["themes-image6"]} ${styles["themes-image"]}`}
+          ></div>
         </div>
 
-        <div class="bestSellers-slide-right">
+        <div className={styles["bestSellers-slide-right"]}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="slide-right-icon"
+            className={styles["slide-right-icon"]}
           >
             <path
               stroke-linecap="round"

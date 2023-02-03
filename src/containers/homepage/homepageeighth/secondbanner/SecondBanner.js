@@ -1,22 +1,23 @@
 import React from "react";
+import styles from "./secondbanner.module.css";
 
 const SecondBanner = () => {
   return (
     //  eight section(second bannner)
-    <div class="secondBanner-container">
+    <div className={styles["secondBanner-container"]}>
       {/* eight section-- first part  */}
       <h1>For Christmas Eve</h1>
       {/* eight section-- second part  */}
-      <div class="secondBanner-image-container">
+      <div className={styles["secondBanner-image-container"]}>
         {/* eight section--second part--first part  */}
-        <div class="bestSellers-slide-left">
+        <div className={styles["bestSellers-slide-left"]}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="slide-left-icon"
+            className={styles["slide-left-icon"]}
           >
             <path
               stroke-linecap="round"
@@ -26,16 +27,16 @@ const SecondBanner = () => {
           </svg>
         </div>
         {/* eight section--second part--second part  */}
-        <div class="photo2"></div>
+        <div className={styles.photo2}></div>
         {/* eight section--second part--third part  */}
-        <div class="bestSellers-slide-right">
+        <div className={styles["bestSellers-slide-right"]}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="slide-right-icon"
+            className={styles["slide-right-icon"]}
           >
             <path
               stroke-linecap="round"
@@ -46,12 +47,12 @@ const SecondBanner = () => {
         </div>
       </div>
       {/* eight section-- third part  */}
-      <div class="shapes">
-        <span class="shape1 shapeRec"></span>
-        <span class="shape2 shapeCir"></span>
-        <span class="shape3 shapeCir"></span>
-        <span class="shape4 shapeCir"></span>
-        <span class="shape5 shapeCir"></span>
+      <div className={styles.shapes}>
+        <span className={`${styles.shape1} ${styles.shapeRec}`}></span>
+        <span className={`${styles.shape2} ${styles.shapeCir}`}></span>
+        <span className={`${styles.shape3} ${styles.shapeCir}`}></span>
+        <span className={`${styles.shape4} ${styles.shapeCir}`}></span>
+        <span className={`${styles.shape5} ${styles.shapeCir}`}></span>
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./decorationbackdrops.module.css";
 
 const DecorationBackdrops = () => {
   return (
-    //  nineth section(Decoration backdrops same as best sellers)
-    <div class="decorationBackdrops">
+    //  ninth section(Decoration backdrops same as best sellers)
+    <div className={styles.decorationBackdrops}>
       <h1>Decoration Backdrops</h1>
     </div>
   );

@@ -1,28 +1,42 @@
-import React from 'react'
+import React from "react";
+import styles from "./ourproducts.module.css";
 
 const OurProducts = () => {
   return (
     <>
-     {/* products section (third section) */}
-<div class="ourProducts-container">
-  <h1>Our Products</h1>
-  <div class="ourProducts-image-text-container">
-    <div class="ourProducts-image-text-container1">
-      <div class="ourProduct-image1 ourProduct-image"></div>
-      <div class="ourProducts-text1">Decoration backdrops</div>
-    </div>
-    <div class="ourProducts-image-text-container2">
-      <div class="ourProduct-image2 ourProduct-image"></div>
-      <div class="ourProducts-text2">Balloon backgrounds</div>
-    </div>
-    <div class="ourProducts-image-text-container3">
-      <div class="ourProduct-image3 ourProduct-image"></div>
-      <div class="ourProducts-text3">Flowers and leaves</div>
-    </div>
-  </div>
-</div>;
-</>
-  )
-}
+      {/* products section (third section) */}
+      <div className={styles["ourProducts-container"]}>
+        <h1>Our Products</h1>
+        <div className={styles["ourProducts-image-text-container"]}>
+          <div className={styles["ourProducts-image-text-container1"]}>
+            <div
+              className={`${styles["ourProduct-image1"]} ${styles["ourProduct-image"]}`}
+            ></div>
+            <div className={styles["ourProducts-text1"]}>
+              Decoration backdrops
+            </div>
+          </div>
+          <div className={styles["ourProducts-image-text-container2"]}>
+            <div
+              className={`${styles["ourProduct-image2"]} ${styles["ourProduct-image"]}`}
+            ></div>
+            <div className={styles["ourProducts-text2"]}>
+              Balloon backgrounds
+            </div>
+          </div>
+          <div className={styles["ourProducts-image-text-container3"]}>
+            <div
+              className={`${styles["ourProduct-image3"]} ${styles["ourProduct-image"]}`}
+            ></div>
+            <div className={styles["ourProducts-text3"]}>
+              Flowers and leaves
+            </div>
+          </div>
+        </div>
+      </div>
+      ;
+    </>
+  );
+};
 
-export default OurProducts
+export default OurProducts;

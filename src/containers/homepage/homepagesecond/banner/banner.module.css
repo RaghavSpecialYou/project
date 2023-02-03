@@ -1,34 +1,38 @@
 /*Banner section (second section) */
 .photo {
-    width: 1032px;
-    height: 256px;
-    margin-left: auto;
-    margin-right: auto;
-  
-    background: url(images/merryChristmas.webp);
-    background-size: cover;
-    border-radius: 12px;
-  }
-  
-  .shapes {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    padding-top: 16px;
-  }
-  .shapeRec {
-    height: 10px;
-    width: 25px;
-    background: #e95850;
-    border-radius: 100px;
-  }
-  .shapeCir {
-    height: 10px;
-    width: 10px;
-    background: #fdc8c5;
-    border-radius: 50%;
-  }
-  .bannerParent {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  width: 1032px;
+  height: 256px;
+  /* may be this thing worked on parent container */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+
+  /* background: url(images/merryChristmas.webp); */
+  /* background: url(bannerList.image); */
+  /* background-size: cover; */
+  border-radius: 12px;
+  margin-left: 200px;
+}
+
+.shapes {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+.shapeRec {
+  height: 10px;
+  width: 25px;
+  background: #e95850;
+  /* background: #fdc8c5; */
+  border-radius: 100px;
+}
+.shapeCir {
+  height: 10px;
+  width: 10px;
+  background: #fdc8c5;
+  border-radius: 50%;
+}
+.bannerParent {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
